@@ -1,0 +1,27 @@
+{{#if message}} {{message}} {{/if}}
+
+
+<form method="post">
+
+    <table>
+        
+        <tr>
+            <td>Department ID : </td>
+            <td>
+                <input type="text" placeholder="Enter Id" name="departmentid" required> </td>
+        </tr>
+        <tr>
+            <td> Department Name :</td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="departmentname"  required>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display_department'">
+            </td>
+        </tr>
+    </table>
+</form>

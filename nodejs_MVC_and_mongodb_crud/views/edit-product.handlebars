@@ -1,0 +1,42 @@
+{{#if message}} {{message}} {{/if}}
+
+ 
+<form method="post">
+
+    <table>
+
+        <tr>
+            <td>Product ID : </td>
+            <td>
+                <input type="text" placeholder="Enter Id" name="productid" value="{{productDetail.productid}}" required> </td>
+        </tr>
+        <tr>
+            <td> Product Name :</td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="productname" value="{{productDetail.productname}}" required>
+            </td>
+        </tr>
+       
+<tr>
+            <td> Product Price :</td>
+            <td>
+                <input type="text" placeholder="Enter Price" name="productprice" value="{{productDetail.productprice}}" required>
+            </td>
+        </tr>
+       
+        <tr>
+
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display_product';">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+</form>
+
+ 

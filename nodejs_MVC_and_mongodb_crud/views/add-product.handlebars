@@ -1,0 +1,42 @@
+{{#if message}} {{message}} {{/if}}
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: darksalmon;"> 
+    
+
+<form style="text-align: center;" method="post" class="form-group">
+
+    <table>
+        
+        <tr>
+            <td>Product ID : </td>
+            <td>
+                <input type="text" placeholder="Enter Id" name="productid" required> </td>
+        </tr>
+        <tr>
+            <td> Product Name :</td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="productname"  required>
+            </td>
+        </tr>
+        <tr>
+            <td> Product Price :</td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="productprice"  required>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display_product'">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
