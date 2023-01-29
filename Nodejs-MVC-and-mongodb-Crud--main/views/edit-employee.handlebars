@@ -1,0 +1,84 @@
+{{#if message}} {{message}} {{/if}}
+
+ 
+<form method="post">
+
+    <table>
+
+        <tr>
+            <td>Employee ID : </td>
+            <td>
+                <input type="text" placeholder="Enter Id" name="employeeid" value="{{employeeDetail.employeeid}}" required> </td>
+        </tr>
+        <tr>
+            <td> Sin Number :</td>
+            <td>
+                <input type="text" placeholder="Enter Sinnumber" name="sinnumber" value="{{employeeDetail.sinnumber}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> name :</td>
+            <td>
+                <input type="text" placeholder="Enter name" name="name" value="{{employeeDetail.name}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> Date of Birth :</td>
+            <td>
+                <input type="text" placeholder="Enter Date of birth" name="dateofbirth" value="{{employeeDetail.dateofbirth}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> E-mail :</td>
+            <td>
+                <input type="text" placeholder="Enter Email" name="email" value="{{employeeDetail.email}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> Phone :</td>
+            <td>
+                <input type="text" placeholder="Enter phone" name="phone" value="{{employeeDetail.phone}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> Job Class :</td>
+            <td>
+                <input type="text" placeholder="Enter jobclass" name="jobclass" value="{{employeeDetail.jobclass}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> Annual salary :</td>
+            <td>
+                <input type="text" placeholder="Enter annual salary" name="annualsalary" value="{{employeeDetail.annualsalary}}" required>
+            </td>
+        </tr><tr>
+            <td> Address :</td>
+            <td>
+                <input type="text" placeholder="Enter address" name="address" value="{{employeeDetail.address}}" required>
+            </td>
+        </tr>
+        <tr>
+            <td> Hire Date :</td>
+            <td>
+                <input type="text" placeholder="Enter Hiredate" name="hiredate" value="{{employeeDetail.hiredate}}" required>
+            </td>
+        </tr>
+
+       
+
+        <tr>
+
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display_employee';">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+</form>
+
+ 

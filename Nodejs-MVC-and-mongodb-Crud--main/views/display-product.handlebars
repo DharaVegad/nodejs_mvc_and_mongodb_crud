@@ -1,0 +1,40 @@
+{{#if message}}
+    {{message}}
+{{/if}}
+
+<html>
+    <head> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+<table border="1" class="table table-hover">
+
+        <tr style="background-color: cornflowerblue;">
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+        </tr>
+ 
+       Record Found {{ products.length  }}
+        {{#each products}}
+        <tr>
+
+                <td>{{productid}}</td>
+                <td>{{productname}}</td>
+                <td>{{productprice}}</td>
+                <td>
+                        <a href='edit_product/{{_id}}'>Edit</a> |    
+                 
+                        <a href='delete_product/{{_id}}'>Delete</a>
+                </td>
+
+        </tr>
+
+        {{else}}
+
+        
+                 No Record Found
+        
+        {{/each}}
+</table>
+
+ </html>

@@ -1,0 +1,44 @@
+{{#if message}}
+    {{message}}
+{{/if}}
+
+<html>
+        <head>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+
+
+<table border="1" class="table table-hover">
+
+        <tr style="background-color: cornflowerblue;">
+                <th>Department ID</th>
+                <th>Department Name</th>
+        </tr>
+ 
+       Record Found {{ departments.length  }}
+        {{#each departments}}
+        <tr>
+
+                <td>{{departmentid}}</td>
+                <td>{{departmentname}}</td>
+                
+                <td>
+                        <a href='edit/{{_id}}'>Edit</a> |    
+                 
+                        <a href='delete/{{_id}}'>Delete</a>
+                </td>
+
+        </tr>
+
+        {{else}}
+
+        
+                 No Record Found
+        
+        {{/each}}
+</table>
+
+ </html>

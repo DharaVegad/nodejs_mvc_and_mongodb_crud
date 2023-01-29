@@ -1,0 +1,55 @@
+{{#if message}}
+    {{message}}
+{{/if}}
+ <head> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script></head>
+<table  class="table table-hover">
+
+       
+
+         <tr style="background-color: cornflowerblue;">
+                <th>Employee ID</th>
+                <th>Sin Number</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>E- mail</th>
+                <th>Phone</th>
+                <th>Job Class</th>
+                <th>Annual Saalry</th>
+                <th>Address</th>
+                <th>Hire Date</th>
+        </tr>
+ 
+       Record Found {{ employees.length  }}
+        {{#each employees}}
+        <tr>
+
+                <td>{{employeeid}}</td>
+                <td>{{sinnumber}}</td>
+                <td>{{name}}</td>
+                <td>{{dateofbirth}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{jobclass}}</td>
+                <td>{{annualsalary}}</td>
+                <td>{{address}}</td>
+                <td>{{hiredate}}</td>
+                
+                <td>
+                        <a href='edit_employee/{{_id}}'>Edit</a> |    
+                 
+                        <a href='delete_employee/{{_id}}'>Delete</a>
+                </td>
+
+        </tr>
+
+        {{else}}
+
+        
+                 No Record Found
+        
+        {{/each}}
+</table>
+
+ 

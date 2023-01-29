@@ -1,0 +1,33 @@
+{{#if message}} {{message}} {{/if}}
+
+
+<form method="post">
+
+    <table>
+        
+        <tr>
+            <td>Customer ID : </td>
+            <td>
+                <input type="text" placeholder="Enter Id" name="customerid" required> </td>
+        </tr>
+        <tr>
+            <td> Customer Name :</td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="customername"  required>
+            </td>
+        </tr>
+        <tr>
+            <td> Customer Contact :</td>
+            <td>
+                <input type="text" placeholder="Enter Contact" name="customercontact"  required>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+                  <input type="button" value="Display" onclick="window.location='display_customer'">
+            </td>
+        </tr>
+    </table>
+</form>
